@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="ExtentReports.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <classes>
+      <class name="DeletePackage.DeletePackage_XRequestValidations">
+        <methods>
+          <include name="StartUp"/>
+          <include name="DeletePackage_XRequestIsNull"/>
+        </methods>
+      </class> <!-- DeletePackage.DeletePackage_XRequestValidations -->
+      <class name="FetchLicense.FetchLicenseMiscellaneousScenarios">
+        <methods>
+          <include name="startup"/>
+          <include name="FtechLicenseValidData"/>
+        </methods>
+      </class> <!-- FetchLicense.FetchLicenseMiscellaneousScenarios -->
+      <class name="DeletePackage.DeletePackage_TenantValidations">
+        <methods>
+          <include name="DeletePackage_Tenantis255Characters"/>
+          <include name="DeletePackage_TenantNotMapped"/>
+          <include name="StartUp"/>
+          <include name="DeletePackage_TenantIsNull"/>
+        </methods>
+      </class> <!-- DeletePackage.DeletePackage_TenantValidations -->
+      <class name="AddFeature.AddFeature_MultipleRequests">
+        <methods>
+          <include name="AddFeature_AddMultipleFeaureidsWithOneFeatureIdAlreadyPresent"/>
+          <include name="startup"/>
+        </methods>
+      </class> <!-- AddFeature.AddFeature_MultipleRequests -->
+      <class name="FetchPackage.StatusValidations">
+        <methods>
+          <include name="FetchPackage_OnlyStatesisGivenintheRequest_Deprecated"/>
+          <include name="FetchPackage_StatesandDateRangeIsGiven"/>
+          <include name="FetchPackage_OnlyStatesisGivenintheRequest_Inuse"/>
+          <include name="FetchPackage_WhenMultipleStatesisGiven_InuseAndDeprecated"/>
+          <include name="FetchPackage_OnlyStatesisGivenintheRequest_OutofUse"/>
+          <include name="FetchPackage_FeatureIdandStatesisGiven"/>
+          <include name="FetchPackage_WhenMultipleStatesisGiven_Out_of_UseAndDeprecated"/>
+        </methods>
+      </class> <!-- FetchPackage.StatusValidations -->
+      <class name="AddPackage.PackageIdValidations">
+        <methods>
+          <include name="AddPackage_PackageId_hasspecialcharacters"/>
+          <include name="startup"/>
+        </methods>
+      </class> <!-- AddPackage.PackageIdValidations -->
+      <class name="AddPackage.URLvalidations">
+        <methods>
+          <include name="AddPackage_URL2048characters"/>
+          <include name="startup"/>
+        </methods>
+      </class> <!-- AddPackage.URLvalidations -->
+      <class name="AddPackage.AddingPackagewithDifferentStatus">
+        <methods>
+          <include name="startup"/>
+          <include name="AddPackagewithStatusOutOfUse"/>
+        </methods>
+      </class> <!-- AddPackage.AddingPackagewithDifferentStatus -->
+      <class name="FetchPackage.ValidData">
+        <methods>
+          <include name="FetchPackage_ValidData"/>
+        </methods>
+      </class> <!-- FetchPackage.ValidData -->
+      <class name="AddFeature.AddFeature_XRequestIdvalidations">
+        <methods>
+          <include name="AddFeaturewithXRequestIDof255characters"/>
+          <include name="startup"/>
+        </methods>
+      </class> <!-- AddFeature.AddFeature_XRequestIdvalidations -->
+      <class name="FetchPackage.XRequestIdValidations">
+        <methods>
+          <include name="FetchPackage_XrequestIdIs256Characters"/>
+        </methods>
+      </class> <!-- FetchPackage.XRequestIdValidations -->
+      <class name="FetchPackage.FeatureIdValidations">
+        <methods>
+          <include name="FetchPackage_OnlyFeatureIdisSent"/>
+          <include name="FetchPackage_WhenPackageIdandFeatureIdandStartDatearePresent1"/>
+        </methods>
+      </class> <!-- FetchPackage.FeatureIdValidations -->
+      <class name="AddPackage.ChecksumValueValidations">
+        <methods>
+          <include name="ChecksumValuehasspecialcharacters"/>
+          <include name="startup"/>
+          <include name="ChecksumValueis2048characters"/>
+        </methods>
+      </class> <!-- AddPackage.ChecksumValueValidations -->
+      <class name="AddPackage.AddingMultiplePackages">
+        <methods>
+          <include name="AddMultiplePackagesinthesamerequest"/>
+          <include name="startup"/>
+        </methods>
+      </class> <!-- AddPackage.AddingMultiplePackages -->
+      <class name="AddFeature.AddFeature_TenantIdValidations">
+        <methods>
+          <include name="startup"/>
+          <include name="AddFeaturewithTenantIdof256characters"/>
+        </methods>
+      </class> <!-- AddFeature.AddFeature_TenantIdValidations -->
+      <class name="AddPackage.FeatureIdValidations">
+        <methods>
+          <include name="AddPackage_FeatureIdis255characters"/>
+          <include name="startup"/>
+          <include name="AddPackage_whenFeatureIdis256characters"/>
+          <include name="FeatureId_Not_In_Database"/>
+        </methods>
+      </class> <!-- AddPackage.FeatureIdValidations -->
+      <class name="DeletePackage.DeletePackage_PackageIdValidations">
+        <methods>
+          <include name="DeletePackage_ValidData"/>
+          <include name="DeletePackage_PackageIdNotInDatabase"/>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- DeletePackage.DeletePackage_PackageIdValidations -->
+      <class name="UpdatePackage.UpdatePackage_ValidScenarios">
+        <methods>
+          <include name="Three_updatepackage_Inuse_to_Inuse"/>
+          <include name="startup"/>
+          <include name="Five_updatepackage_OutofUse_to_Deprecated"/>
+          <include name="Eight_updatepackage_Deprecated_to_OutofUse"/>
+          <include name="Six_updatepackage_OutofUse_to_OutofUse"/>
+          <include name="Two_updatepackage_Inuse_to_OutofUse"/>
+          <include name="Ten_UpdateMultiplePackagesinaSameRequest"/>
+          <include name="Nine_updatepackage_Deprecated_to_Deprecated"/>
+          <include name="Four_updatepackage_OutofUse_to_Inuse"/>
+          <include name="One_updatepackage_Inuse_to_Deprecated"/>
+          <include name="Seven_updatepackage_Deprecated_to_Inuse"/>
+        </methods>
+      </class> <!-- UpdatePackage.UpdatePackage_ValidScenarios -->
+      <class name="AddFeature.AddFeature_FeatureIdValidations">
+        <methods>
+          <include name="AddFeaturewithFeatureIdof255characters"/>
+          <include name="startup"/>
+        </methods>
+      </class> <!-- AddFeature.AddFeature_FeatureIdValidations -->
+      <class name="DeletePackage.DeletePackage_FeatureIdValidations">
+        <methods>
+          <include name="DeletePackage_Featureis255Characters"/>
+          <include name="DeletePackage_FeatureIdNotInDatabase"/>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- DeletePackage.DeletePackage_FeatureIdValidations -->
+      <class name="FetchLicense.PackageIdValidations">
+        <methods>
+          <include name="FetchLicense_PackageIdIsNotinDatabase"/>
+          <include name="FetchLicense_PackageIsinOutofUse"/>
+          <include name="startup"/>
+          <include name="FetchLicense_PackageIsDeprecated"/>
+          <include name="FetchLicense_PackageId_is_in_Inuse"/>
+        </methods>
+      </class> <!-- FetchLicense.PackageIdValidations -->
+      <class name="UpdatePackage.UpdatePackageInvalidScenarios">
+        <methods>
+          <include name="startup"/>
+          <include name="Updatepackage_PackageIdDoesNotBelongtoTenant"/>
+          <include name="Updatepackage_PackageId_Is256Characters"/>
+          <include name="Updatepackage_XRequestId_Is256Characters"/>
+          <include name="UpdateMultiplePackagesinaSameRequest_PackageIdnotmappedtoTenant"/>
+          <include name="Updatepackage_Tenant_Is256Characters"/>
+        </methods>
+      </class> <!-- UpdatePackage.UpdatePackageInvalidScenarios -->
+      <class name="FetchPackage.PackageIdValidations">
+        <methods>
+          <include name="FetchPackage_PackageisNull"/>
+          <include name="FetchPackage_WhenPackageIdandFeatureIdandStartDatearePresent1"/>
+          <include name="FetchPackage_OnlyPackageIdisSent"/>
+          <include name="FetchPackage_WhenPackageIdandFeatureIdandStartDateandEndDatearePresent"/>
+          <include name="FetchPackage_WhenPackageIdhasMultipleFeatureId"/>
+        </methods>
+      </class> <!-- FetchPackage.PackageIdValidations -->
+      <class name="FetchLicense.SubjectIdValidations">
+        <methods>
+          <include name="FetchLicense_SubjectIdis49Characters"/>
+          <include name="startup"/>
+        </methods>
+      </class> <!-- FetchLicense.SubjectIdValidations -->
+      <class name="FetchLicense.XRequestValidations">
+        <methods>
+          <include name="FetchLicense_XRequestIdisNullAsString"/>
+          <include name="startup"/>
+          <include name="FetchLicense_XRequestIdis255Characters"/>
+        </methods>
+      </class> <!-- FetchLicense.XRequestValidations -->
+      <class name="FetchPackage.TenantValidations">
+        <methods>
+          <include name="FetchPackage_TenantIdIs256Characters"/>
+        </methods>
+      </class> <!-- FetchPackage.TenantValidations -->
+      <class name="FetchLicense.ContentItemIdValidations">
+        <methods>
+          <include name="startup"/>
+          <include name="FetchLicense_ContentItemIs256Characters"/>
+        </methods>
+      </class> <!-- FetchLicense.ContentItemIdValidations -->
+      <class name="FetchFeature.Fetch_Feature">
+        <methods>
+          <include name="FeatureIdis255Characters_AndNotinDatabase"/>
+          <include name="FeatureIdis256Characters_AndNotinDatabase"/>
+          <include name="VerifyWhenFeatureIdisNull"/>
+          <include name="XRequestis256Characters"/>
+          <include name="TenantIdNotinDatabase"/>
+          <include name="FeatureIdNotinDatabase"/>
+          <include name="startup"/>
+          <include name="TenantIdis256Characters"/>
+        </methods>
+      </class> <!-- FetchFeature.Fetch_Feature -->
+      <class name="AddPackage.HeaderValidations">
+        <methods>
+          <include name="AddPackage_XRequesthasspecialCharacters"/>
+          <include name="startup"/>
+          <include name="AddPackage_Tenantis255characters"/>
+          <include name="AddPackage_XRequestis255characters"/>
+          <include name="AddPackage_whenXRequestis256characters"/>
+        </methods>
+      </class> <!-- AddPackage.HeaderValidations -->
+      <class name="FetchLicense.TenantValidations">
+        <methods>
+          <include name="startup"/>
+          <include name="FetchLicense_TenantIdis256Characters"/>
+          <include name="FetchLicense_TenantNotinDatabase"/>
+          <include name="FetchLicense_TenantIdisNullAsString"/>
+        </methods>
+      </class> <!-- FetchLicense.TenantValidations -->
+      <class name="AddPackage.ChecksumTypeValidations">
+        <methods>
+          <include name="ChecksumTypeis256characters"/>
+          <include name="ChecksumTypehasspecialcharacters"/>
+          <include name="startup"/>
+        </methods>
+      </class> <!-- AddPackage.ChecksumTypeValidations -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
