@@ -8,7 +8,7 @@ public class HistoryControllerTest {
 
 	@Test
 	public void test() {
-		//fail("Not yet implemented this feature");
+		//fail("Not yet implemented");
 	}
 
 }
