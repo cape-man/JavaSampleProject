@@ -25,6 +25,7 @@ public class HistoryServiceImpl implements HistoryService {
 		JsonParser parser = new JsonParser();
 		JsonElement jsonTree = parser.parse(output);
 		if (jsonTree.isJsonObject()) {
+			//Fetch history as Json
 			JsonObject jsonObject = jsonTree.getAsJsonObject();
 
 			History history = gson.fromJson((jsonObject), History.class);
