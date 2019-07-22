@@ -1,2 +1,2 @@
 # JavaSampleProject
-Test2....
+Test2.
